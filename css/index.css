@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+
+nav {
+    margin: 0 auto;
+    font-size: large;
+    font-weight: 500;
+    width: fit-content;
+    background: linear-gradient(to top right, #aaaaff, #ff879c);
+}
+
+/* Контейнер div, в котором nav */
+.cap {
+    width: 100%;
+    background: linear-gradient(to top right, #aaaaff, #ff879c);
+}
+/* Контейнер div, в котором nav */
+
+/* Стилизацяи карточек */
+.card {
+    margin: 1% 1%;
+}
+/* Стилизация карточек */
+
+/* Стилизацяи главного контейнера */
+.main {
+    margin: 0% auto;
+}
+/* Стилизацяи главного контейнера */
+
+/* Исключаем скролл по X */
+.row {
+    width: 100%;
+}
+/* Исключаем скролл по X */
+
+
+/* Медиа-запрос для нормального отображения на телефоне */
+@media (max-width: 600px) {
+    .col {
+        display: contents;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+/* Медиа-запрос для нормального отображения на телефоне */
+
+
+
+
