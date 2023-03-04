@@ -1,0 +1,71 @@
+.game {
+    width: 90%;
+    height: 900px;
+    border-bottom: 1px solid black;
+    margin: auto;
+    background-image: url("https://gamerwall.pro/uploads/posts/2022-05/1652464035_23-gamerwall-pro-p-morskoi-fon-minimalizm-oboi-krasivo-36.jpg");
+    background-size: 100%;   
+    background-repeat: no-repeat; 
+}
+
+.start {
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.packman {
+    top: 1px;
+    left: 1px;
+    width: 50px;
+    height: 50px;
+    background-image: url(./src/packman_1.png);
+    background-size: 50px 50px;
+    position: relative;
+    animation: packman 0.35s infinite linear;
+}
+
+.burg {
+    top: 100px;
+    left: 100px;
+    width: 25px;
+    height: 25px;
+    background-image: url(./src/burg.png);
+    background-size: 25px 25px;
+    position: relative;
+    animation: burg 3s infinite linear;
+}
+
+#incr {
+    text-align: center;
+    font-weight: 700;
+    width: 50px;
+}
+
+#score, #incr {
+    display: inline;
+    background: none;
+    border: 0px;
+}
+
+
+@keyframes packman{
+    0% {
+        background-image: url(./src/packman_2.png);
+    }
+
+    100% {
+        background-image: url(./src/packman_1.png);
+    }
+}
+
+@keyframes burg{
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

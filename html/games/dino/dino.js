@@ -33,7 +33,9 @@ let isAlive = setInterval (function() {
     let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"))
     //Конец... Получаем положение динозаврика и кактуса
     if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
+        cactus.classList.remove("cactus")
         alert("GameOVER");
+        cactus.classList.add("cactus")
         document.getElementById('numb2').value = Number(lose) + 1   //Новое
         document.getElementById('numb').value = 0;
         incr = 0;
@@ -97,4 +99,3 @@ function gameOvers(incrLose) {
         life3.classList.add("non-life")
     }
 } 
-
